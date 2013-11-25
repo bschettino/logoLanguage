@@ -1,6 +1,7 @@
 
+import exceptions.TokenNotFoundException;
 import java.util.List;
-import structures.Comand;
+import structures.Token;
 
 /*
  * To change this template, choose Tools | Templates
@@ -12,5 +13,5 @@ import structures.Comand;
  * @author SCHETTINO
  */
 public interface LexicalAnalyzer {
-    public List<Comand> lexicalAnalysis(String in);
+    public List<Token> lexicalAnalysis(String in) throws TokenNotFoundException;
 }

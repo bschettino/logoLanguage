@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @author SCHETTINO
  */
-public interface Comand {
+public interface Command {
     
     public void action();
     public List<Parameter> getParameters();
