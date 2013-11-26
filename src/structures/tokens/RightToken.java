@@ -13,15 +13,15 @@ import structures.commands.RightCommand;
  * @author SCHETTINO
  */
 public class RightToken implements Token{
-    public static final String RESERVED_WORD = "right";
+    public static final String CONTENT = "right";
     private Command cmd;
 
     public RightToken() {
         this.cmd = new RightCommand();
     }
         @Override
-    public String getReservedWord() {
-       return RESERVED_WORD;
+    public String getContent() {
+       return CONTENT;
     }
 
     @Override

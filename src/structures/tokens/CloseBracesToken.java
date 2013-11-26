@@ -13,15 +13,15 @@ import structures.commands.NullCommand;
  * @author SCHETTINO
  */
 public class CloseBracesToken implements Token{
-    public static final String RESERVED_WORD = "}";
+    public static final String CONTENT = "}";
     private Command cmd;
     
     public CloseBracesToken() {
         this.cmd = new NullCommand();
     }
         @Override
-    public String getReservedWord() {
-       return RESERVED_WORD;
+    public String getContent() {
+       return CONTENT;
     }
 
     @Override

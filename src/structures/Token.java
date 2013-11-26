@@ -9,6 +9,6 @@ package structures;
  * @author SCHETTINO
  */
 public interface Token {
-    public String getReservedWord();
+    public String getContent();
     public Command getCommand();
 }

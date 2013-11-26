@@ -13,15 +13,15 @@ import structures.commands.ShowTurtleCommand;
  * @author SCHETTINO
  */
 public class ShowTurtleToken implements Token{
-    public static final String RESERVED_WORD = "showturtle";
+    public static final String CONTENT = "showturtle";
     private Command cmd;
     
     public ShowTurtleToken() {
         this.cmd = new ShowTurtleCommand();
     }
         @Override
-    public String getReservedWord() {
-       return RESERVED_WORD;
+    public String getContent() {
+       return CONTENT;
     }
 
     @Override

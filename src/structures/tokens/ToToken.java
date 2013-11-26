@@ -13,15 +13,15 @@ import structures.commands.ToCommand;
  * @author SCHETTINO
  */
 public class ToToken implements Token{
-    public static final String RESERVED_WORD = "to";
+    public static final String CONTENT = "to";
     private Command cmd;
     
     public ToToken() {
         this.cmd = new ToCommand();
     }
         @Override
-    public String getReservedWord() {
-       return RESERVED_WORD;
+    public String getContent() {
+       return CONTENT;
     }
 
     @Override

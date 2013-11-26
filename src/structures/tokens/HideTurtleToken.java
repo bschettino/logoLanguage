@@ -13,15 +13,15 @@ import structures.commands.HideTurtleCommand;
  * @author SCHETTINO
  */
 public class HideTurtleToken implements Token{
-    public static final String RESERVED_WORD = "hideturtle";
+    public static final String CONTENT = "hideturtle";
     private Command cmd;
 
     public HideTurtleToken() {
         this.cmd = new HideTurtleCommand();
     }
         @Override
-    public String getReservedWord() {
-       return RESERVED_WORD;
+    public String getContent() {
+       return CONTENT;
     }
 
     @Override

@@ -12,16 +12,26 @@ import structures.commands.NullCommand;
  *
  * @author SCHETTINO
  */
-public class OpenBracesToken implements Token{
-    public static final String CONTENT = "{";
+public class UnknownToken implements Token {
+
+    private String content;
     private Command cmd;
 
-    public OpenBracesToken() {
+    public UnknownToken() {
         this.cmd = new NullCommand();
     }
-        @Override
+    public UnknownToken(String c) {
+        this.cmd = new NullCommand();
+        this.content = c;
+    }
+
+    @Override
     public String getContent() {
-       return CONTENT;
+        return content;
+    }
+
+    public void setContent(String c) {
+        content = c;
     }
 
     @Override

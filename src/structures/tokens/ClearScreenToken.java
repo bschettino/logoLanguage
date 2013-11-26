@@ -13,15 +13,15 @@ import structures.commands.ClearScreenCommand;
  * @author SCHETTINO
  */
 public class ClearScreenToken implements Token{
-    public static final String RESERVED_WORD = "clearscreen";
+    public static final String CONTENT = "clearscreen";
     private Command cmd;
     
     public ClearScreenToken() {
         this.cmd = new ClearScreenCommand();
     }
         @Override
-    public String getReservedWord() {
-       return RESERVED_WORD;
+    public String getContent() {
+       return CONTENT;
     }
 
     @Override

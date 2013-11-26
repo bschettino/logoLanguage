@@ -13,15 +13,15 @@ import structures.commands.PenDownCommand;
  * @author SCHETTINO
  */
 public class PenDownToken implements Token{
-    public static final String RESERVED_WORD = "pendown";
+    public static final String CONTENT = "pendown";
     private Command cmd;
 
     public PenDownToken() {
         this.cmd = new PenDownCommand();
     }
         @Override
-    public String getReservedWord() {
-       return RESERVED_WORD;
+    public String getContent() {
+       return CONTENT;
     }
 
     @Override

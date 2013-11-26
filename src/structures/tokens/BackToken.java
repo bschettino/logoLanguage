@@ -13,15 +13,15 @@ import structures.commands.BackCommand;
  * @author SCHETTINO
  */
 public class BackToken implements Token{
-    public static final String RESERVED_WORD = "back";
+    public static final String CONTENT = "back";
     private Command cmd;
     public BackToken() {
         this.cmd = new BackCommand();
     }
 
     @Override
-    public String getReservedWord() {
-       return RESERVED_WORD;
+    public String getContent() {
+       return CONTENT;
     }
 
     @Override

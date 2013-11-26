@@ -13,15 +13,15 @@ import structures.commands.ForwardCommand;
  * @author SCHETTINO
  */
 public class ForwardToken implements Token{
-    public static final String RESERVED_WORD = "forward";
+    public static final String CONTENT = "forward";
     private Command cmd;
 
     public ForwardToken() {
         this.cmd = new ForwardCommand();
     }
         @Override
-    public String getReservedWord() {
-       return RESERVED_WORD;
+    public String getContent() {
+       return CONTENT;
     }
 
     @Override

@@ -13,7 +13,7 @@ import structures.commands.LeftCommand;
  * @author SCHETTINO
  */
 public class LeftToken implements Token{
-    public static final String RESERVED_WORD = "left";
+    public static final String CONTENT = "left";
     private Command cmd;
     
 
@@ -21,8 +21,8 @@ public class LeftToken implements Token{
         this.cmd = new LeftCommand();
     }
         @Override
-    public String getReservedWord() {
-       return RESERVED_WORD;
+    public String getContent() {
+       return CONTENT;
     }
 
     @Override

@@ -1,5 +1,6 @@
+package analizers;
 
-import exceptions.TokenNotFoundException;
+
 import java.util.List;
 import structures.Token;
 
@@ -13,5 +14,5 @@ import structures.Token;
  * @author SCHETTINO
  */
 public interface LexicalAnalyzer {
-    public List<Token> lexicalAnalysis(String in) throws TokenNotFoundException;
+    public List<Token> lexicalAnalysis(String in);
 }
